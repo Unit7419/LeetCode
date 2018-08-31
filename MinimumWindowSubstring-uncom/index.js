@@ -22,7 +22,6 @@ function minWindow (s, t) {
 
   const allFirstMatchIndex = []
   const tempArr = s.slice(0)
-
   for (let i = 0; i < t.length; i++) {
     const currentIndex = getIndex(tempArr, t[i])
 
