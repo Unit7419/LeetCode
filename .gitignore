@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 node_modules
 package-lock.json
 .DS_Store
@@ -6,3 +7,7 @@ package-lock.json
 =======
 node_modules
 >>>>>>> chore(pkg): add ts env
+=======
+node_modules
+package-lock.json
+>>>>>>> add jest
