@@ -4,7 +4,6 @@
 Example 1:
 
 Input: [1,2,0]
-
 Output: 3
 Example 2:
 
