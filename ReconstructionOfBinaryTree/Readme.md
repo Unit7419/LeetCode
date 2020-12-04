@@ -1,5 +1,7 @@
 ## 题目
 
+> [Link](https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)
+
 输入某二叉树的前序遍历和中序遍历的结果，请重建该二叉树。假设输入的前序遍历和中序遍历的结果中都不含重复的数字。
 
 例如，给出
@@ -18,7 +20,9 @@
     /  \
    15   7
 ```
+
 限制：
+
 ```
 0 <= 节点个数 <= 5000
 ```
