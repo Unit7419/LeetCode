@@ -7,8 +7,6 @@ const testMatch = process.argv[2]
   ? [`**/${process.argv[2]}`]
   : ['**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec).[tj]s?(x)'];
 
-console.log(testMatch, 'testMatch', process.cwd());
-
 export default {
   // All imported modules in your tests should be mocked automatically
   // automock: false,
