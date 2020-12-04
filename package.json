@@ -1,11 +1,7 @@
 {
   "scripts": {
-<<<<<<< HEAD
     "test": "jest",
     "node": "ts-node"
-=======
-    "test": "jest"
->>>>>>> add jest
   },
   "dependencies": {
     "@babel/core": "^7.12.9",
@@ -14,17 +10,11 @@
     "@type-challenges/utils": "^0.1.1",
     "@types/jest": "^26.0.16",
     "babel-jest": "^26.6.3",
-<<<<<<< HEAD
     "ts-node": "^9.1.0",
     "typescript": "4.1.2"
   },
   "devDependencies": {
     "eslint-config-prettier": "^7.0.0",
-=======
-    "typescript": "4.1.2"
-  },
-  "devDependencies": {
->>>>>>> add jest
     "jest": "^26.6.3",
     "prettier": "^2.2.1"
   }
