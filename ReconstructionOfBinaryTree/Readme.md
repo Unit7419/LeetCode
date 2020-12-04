@@ -29,6 +29,6 @@
 
 **[Answer-1](./index.ts)**
 
-**[Answer-2](./solution.justwink.ts)**
+**[Answer-2](./solution.jw.ts)**
 
-**[Test cases]('./test.spec.ts)**
+**[Test cases](./test.spec.ts)**
