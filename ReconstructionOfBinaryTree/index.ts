@@ -21,7 +21,7 @@ function TreeNode(val) {
  * @param {number[]} inorder
  * @return {TreeNode}
  */
-var buildTreeXq = function(preorder, inorder) {
+export const buildTreeXq = function(preorder, inorder) {
     if(preorder.length===0){
         return null
     }
@@ -37,3 +37,6 @@ var buildTreeXq = function(preorder, inorder) {
   
   return node
   };
+
+
+ 
