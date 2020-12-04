@@ -1,7 +1,6 @@
 /**
  * 重建二叉树
  * @data 2020.12.04
-<<<<<<< HEAD
  */
 
 /**
@@ -38,6 +37,3 @@ export const buildTreeXq = function (preorder, inorder) {
 
   return node;
 };
-=======
- */
->>>>>>> 重建二叉树文件目录

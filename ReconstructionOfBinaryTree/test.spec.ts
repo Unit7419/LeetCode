@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // 测试案例
 import { buildTreeXq } from './index';
 import { buildTree } from './solution.jw';
@@ -61,6 +60,3 @@ test('重建二叉树-3', () => {
     JSON.stringify(flatTree_(buildTreeEy([3, 9, 20, 15, 7], [9, 3, 15, 20, 7])))
   ).toBe(JSON.stringify([3, 9, 20, null, null, 15, 7]));
 });
-=======
-// 测试案例
->>>>>>> 重建二叉树文件目录
