@@ -1,6 +1,7 @@
 // 测试案例
 import { buildTreeXq } from './index';
 import { buildTree } from './solution.jw';
+import { buildTreeEy } from './solution.ey';
 
 function flatTree_(obj = {} as any, arr = []) {
   function push(value) {
@@ -51,5 +52,11 @@ test('重建二叉树', () => {
 test('重建二叉树-2', () => {
   expect(
     JSON.stringify(flatTree_(buildTree([3, 9, 20, 15, 7], [9, 3, 15, 20, 7])))
+  ).toBe(JSON.stringify([3, 9, 20, null, null, 15, 7]));
+});
+
+test('重建二叉树-3', () => {
+  expect(
+    JSON.stringify(flatTree_(buildTreeEy([3, 9, 20, 15, 7], [9, 3, 15, 20, 7])))
   ).toBe(JSON.stringify([3, 9, 20, null, null, 15, 7]));
 });
