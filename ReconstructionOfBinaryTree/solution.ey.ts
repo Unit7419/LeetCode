@@ -1,7 +1,7 @@
 /*
  * @Date: 2020-12-04 17:29:59
  * @LastEditors: elegantYu
- * @LastEditTime: 2020-12-04 18:02:50
+ * @LastEditTime: 2020-12-06 13:56:48
  * @Description: 构造二叉树
  */
 // 树节点函数
@@ -15,7 +15,7 @@ function TreeNode(val) {
  * @param {number[]} inorder
  * @return {TreeNode}
  */
-export var buildTree = function (preorder, inorder) {
+export var buildTreeEy = function (preorder, inorder) {
   if (!preorder || !preorder.length || !inorder || !inorder.length) return null;
 
   if (preorder.length === 1) return new TreeNode(preorder[0]);
@@ -26,11 +26,11 @@ export var buildTree = function (preorder, inorder) {
   const leftLength = inorder.slice(0, rootIndex).length;
 
   const root = new TreeNode(rootNode);
-  root.left = buildTree(
+  root.left = buildTreeEy(
     preorder.slice(1, leftLength + 1),
     inorder.slice(0, rootIndex)
   );
-  root.right = buildTree(
+  root.right = buildTreeEy(
     preorder.slice(leftLength + 1),
     inorder.slice(rootIndex + 1)
   );
