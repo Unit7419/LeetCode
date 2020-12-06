@@ -1,6 +1,8 @@
 ## 题目
 
-> [Link](https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)
+> Authored by [summerUniq](https://github.com/summerUniq)
+
+> Original source [Leet code](https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)
 
 输入某二叉树的前序遍历和中序遍历的结果，请重建该二叉树。假设输入的前序遍历和中序遍历的结果中都不含重复的数字。
 
