@@ -12,4 +12,4 @@ test('两个栈实现队列', () => {
   expect(JSON.stringify(queue.logs)).toBe(
     JSON.stringify([null, null, null, 3, 4, -1])
   );
-});
+
