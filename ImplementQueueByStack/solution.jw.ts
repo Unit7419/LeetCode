@@ -1,11 +1,13 @@
-// 为什么会需要两个栈...
-
 export class CQueue {
   stack: number[] = [];
+  stack2: number[] = [];
   logs: (null | number)[] = [null];
 
   deleteHead = () => {
-    const r = this.stack.shift() || -1;
+    this.stack2 = [...this.stack.reverse()];
+    const r = this.stack2.pop() || -1;
+    this.stack = [...this.stack2.reverse()];
+    this.stack2 = [];
     this.logs.push(r);
 
     return r;
