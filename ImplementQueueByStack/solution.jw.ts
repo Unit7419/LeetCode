@@ -3,14 +3,20 @@ export class CQueue {
   stack2: number[] = [];
   logs: (null | number)[] = [null];
 
-  deleteHead = () => {
-    this.stack2 = [...this.stack.reverse()];
-    const r = this.stack2.pop() || -1;
-    this.stack = [...this.stack2.reverse()];
-    this.stack2 = [];
-    this.logs.push(r);
+  swap = (a, b) => {
+    while (a.length) {
+      b.push(a.pop());
+    }
+  };
 
-    return r;
+  deleteHead = () => {
+    if (this.stack.length) {
+      this.swap(this.stack, this.stack2);
+      this.logs.push(this.stack2.pop());
+      this.swap(this.stack2, this.stack);
+      return
+    }
+    this.logs.push(-1);
   };
 
   appendTail = (val: number) => {
