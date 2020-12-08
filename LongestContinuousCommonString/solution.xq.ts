@@ -8,6 +8,7 @@ export const longestContinuousCommonStringXq = function (s1: string, s2:string) 
     // 生成二维数组, 每项都是0
     const m = s1.length
     const n = s2.length
+    const stack = []
     const dl = Array.from(new Array(m+1), ()=> new Array(n+1).fill(0))
     let result = ''
     // 遍历s1 和 S2
@@ -20,6 +21,7 @@ export const longestContinuousCommonStringXq = function (s1: string, s2:string) 
                 result += s2[j-1]
             }else{
                
+                
             }
         }
     }
