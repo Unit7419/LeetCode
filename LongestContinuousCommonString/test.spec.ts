@@ -1,7 +1,7 @@
 import { longestContinuousCommonString as longestContinuousCommonStringJw } from '.';
 import { LongestContinuousCommonStringEy } from './solution.ey'
 import { longestContinuousCommonStringJZ } from './soultion.jz'
-import { longestContinuousCommonStringXq } from './solution.xq';
+import { longestContinuousCommonStringXq } from './solution.xq.ts';
 
 test('Longest continuous common string.', () => {
   expect(longestContinuousCommonStringJw('12345078', '345678')).toBe('345');
