@@ -31,6 +31,15 @@ public class MathPow {
 
 
     public BigDecimal pow2(BigDecimal target , double mi){
+
+        if(target.equals(0)){
+            return new BigDecimal(0);
+        }
+
+        if(mi == 0){
+            return new BigDecimal(1);
+        }
+
         if(mi < 0){
             target = new BigDecimal(1).divide(target);
             mi = mi * -1;
