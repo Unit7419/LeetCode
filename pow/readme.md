@@ -2,7 +2,7 @@
 
 > Authored by [justwink](https://github.com/justwink)
 
-一个要求，实现JS原生 Math 对象的 `pow` 方法
+实现原生 Math 对象的 `pow` 方法（可以不考虑幂是小数）
 
 Example：
 
