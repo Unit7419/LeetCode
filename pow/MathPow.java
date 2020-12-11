@@ -1,9 +1,12 @@
 import org.junit.Test;
 
+import java.math.BigDecimal;
+import java.math.BigInteger;
+
 public class MathPow {
     @Test
     public void test(){
-        System.out.println(pow(10 , -2));
+        System.out.println(pow2(new BigDecimal(10) , -2));
     }
 
     public double pow(double target , double mi){
@@ -24,5 +27,18 @@ public class MathPow {
             d = 1 / d;
         }
         return d;
+    }
+
+
+    public BigDecimal pow2(BigDecimal target , double mi){
+        if(mi < 0){
+            target = new BigDecimal(1).divide(target);
+            mi = mi * -1;
+        }
+        if (mi == 1){
+            return target;
+        }else{
+            return pow2(target.multiply(target) , mi - 1);
+        }
     }
 }
