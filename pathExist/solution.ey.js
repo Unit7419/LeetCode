@@ -1,11 +1,11 @@
 /*
  * @Date: 2020-12-12 14:52:34
  * @LastEditors: elegantYu
- * @LastEditTime: 2020-12-12 18:49:15
+ * @LastEditTime: 2020-12-12 18:50:41
  * @Description:
  */
 
-const pathExist = (board, word) => {
+export const pathExistEy = (board, word) => {
   // 获取横纵长度
   // 第一次遍历找到第一个字符，若无返回false，若有存入坐标
   // 获取当前坐标周围数据，若无返回false，若有判断是否已存入，已存入返回false，或存入坐标
