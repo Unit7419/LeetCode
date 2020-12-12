@@ -28,12 +28,14 @@ export const exist = (matrix, chars) => {
     ],
     data = []
   ) => {
-    collections.forEach(item => {
-      push(data, item, item.i + 1, item.j);
-      push(data, item, item.i, item.j + 1);
-      push(data, item, item.i - 1, item.j);
-      push(data, item, item.i, item.j - 1);
-    });
+    collections.forEach(item =>
+      [
+        [item.i + 1, item.j],
+        [item.i, item.j + 1],
+        [item.i - 1, item.j],
+        [item.i, item.j - 1],
+      ].forEach(_ => push(data, item, ...(_ as [number, number])))
+    );
 
     return collections.some(({ value }) => equal([...value], [...chars]))
       ? true
