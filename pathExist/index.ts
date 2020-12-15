@@ -3,6 +3,8 @@
  * @param {string} word
  * @return {boolean}
  */
-export const exist = function(board, word) {
+import {exist} from './solution.xq'
 
-};
+export {
+    exist
+}
