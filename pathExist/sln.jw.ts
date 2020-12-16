@@ -1,17 +1,7 @@
 export const exist = (matrix, chars) => {
   const bool = (i, j) => matrix[i] && matrix[i][j];
-  const equal = (a, b) => {
-    const temp = [];
-    const chars = b.join('');
-
-    for (let idx = 0; idx < a.length; idx++) {
-      if (a[idx] === b[0]) {
-        temp.push(b.shift());
-
-        if (chars === temp.join('')) return true;
-      }
-    }
-  };
+  const g = _ => new RegExp(_.map(_ => `.*${_}{1}.*`).join(''));
+  const equal = (a, b) => g([...b]).test(a) || g([...b].reverse()).test(a);
 
   const push = (data, item, i, j) => {
     if (bool(i, j) && !item.history.find(_ => _.i === i && _.j === j)) {
@@ -28,13 +18,15 @@ export const exist = (matrix, chars) => {
     ],
     data = []
   ) => {
-    collections.forEach(item =>
-      [
-        [item.i + 1, item.j],
-        [item.i, item.j + 1],
-        [item.i - 1, item.j],
-        [item.i, item.j - 1],
-      ].forEach(_ => push(data, item, ...(_ as [number, number])))
+    collections.forEach(
+      item =>
+        [
+          [item.i + 1, item.j],
+          [item.i, item.j + 1],
+          [item.i - 1, item.j],
+          [item.i, item.j - 1],
+        ].forEach(_ => push(data, item, ...(_ as [number, number])))
+      // ].forEach(_ => push(data, item, ...(_ as [number, number])))
     );
 
     return collections.some(({ value }) => equal([...value], [...chars]))
