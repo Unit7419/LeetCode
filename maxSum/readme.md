@@ -1,6 +1,6 @@
 ## 最大子序和
 
-> Authored by [summerUniq](https://github.com/JayZangwill)
+> Authored by [JayZangwill](https://github.com/JayZangwill)
 
 > Original source [Leet code](https://leetcode-cn.com/problems/maximum-subarray/)
 
