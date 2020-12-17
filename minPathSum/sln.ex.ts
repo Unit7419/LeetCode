@@ -10,7 +10,7 @@ const minPath = matrix => {
       [
         [item.i + 1, item.j],
         [item.i, item.j + 1],
-      ].forEach(_ => push(data, item, ..._))
+      ].forEach(_ => push(data, item, ...(_ as [number, number])))
     );
 
     return collections.every(
