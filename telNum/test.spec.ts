@@ -1,4 +1,5 @@
 import { letterCombinationsEy } from './solution.ey';
+import { telNum as telNumJw } from './sln.jw'
 
 test('电话号码字母组合', () => {
   expect(letterCombinationsEy('23')).toStrictEqual([
@@ -42,5 +43,19 @@ test('电话号码字母组合', () => {
     'cfg',
     'cfh',
     'cfi',
+  ]);
+});
+
+test('Tel num.', () => {
+  expect(telNumJw('23')).toStrictEqual([
+    'ad',
+    'ae',
+    'af',
+    'bd',
+    'be',
+    'bf',
+    'cd',
+    'ce',
+    'cf',
   ]);
 });
