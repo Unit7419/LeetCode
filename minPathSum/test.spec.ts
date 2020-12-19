@@ -1,6 +1,12 @@
 import { minPathSumEy } from './solution.ey';
 import { minPathSum as minPathSumXq } from './solution.xq';
 import { minPath as minPathJw } from './sln.dp';
+import { minPathSumJZ } from './solution.jz'
+
+test('minPathSumJZ', ()=> {
+    expect(minPathSumJZ([[1,2,3],[4,5,6]])).toBe(12)
+    expect(minPathSumJZ([[1,3,1],[1,5,1],[4,2,1]])).toBe(7)
+})
 
 test('最短路径', () => {
   expect(
