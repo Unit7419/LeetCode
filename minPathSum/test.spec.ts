@@ -38,7 +38,7 @@ test('min path sum xq', () => {
       [4, 5, 6],
     ])
   ).toEqual(12);
-})
+});
 
 test('Min path sum', () => {
   expect(
