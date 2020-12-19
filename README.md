@@ -19,6 +19,7 @@
 Each other.
 
 # History
+- 20201221 [CircusTowerLcci](https://github.com/Unit7419/LeetCode/tree/master/CircusTowerLcci)
 - 20201219 [TelNum](https://github.com/Unit7419/LeetCode/tree/master/telNum)
 - 20201218 [MaxSum](https://github.com/Unit7419/LeetCode/tree/master/maxSum)
 - 20201217 [TransformIndent](https://github.com/Unit7419/LeetCode/tree/master/TransformIndent)
