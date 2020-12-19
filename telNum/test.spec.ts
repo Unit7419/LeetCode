@@ -1,7 +1,6 @@
 import { letterCombinationsEy } from './solution.ey';
 
-test(
-  '电话号码字母组合',
+test('电话号码字母组合', () => {
   expect(letterCombinationsEy('23')).toStrictEqual([
     'ad',
     'ae',
@@ -12,10 +11,9 @@ test(
     'cd',
     'ce',
     'cf',
-  ])
-);
-test(
-  '电话号码字母组合',
+  ]);
+});
+test('电话号码字母组合', () => {
   expect(letterCombinationsEy('234')).toStrictEqual([
     'adg',
     'adh',
@@ -44,5 +42,5 @@ test(
     'cfg',
     'cfh',
     'cfi',
-  ])
-);
+  ]);
+});
