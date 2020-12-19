@@ -17,3 +17,19 @@
 
 # Review
 Each other.
+
+# History
+- 20201219 [TelNum](https://github.com/Unit7419/LeetCode/tree/master/telNum)
+- 20201218 [MaxSum](https://github.com/Unit7419/LeetCode/tree/master/maxSum)
+- 20201217 [TransformIndent](https://github.com/Unit7419/LeetCode/tree/master/TransformIndent)
+- 20201215 [Convert](https://github.com/Unit7419/LeetCode/tree/master/Convert)
+- 20201214 [RestoreIpAddresses](https://github.com/Unit7419/LeetCode/tree/master/RestoreIpAddresses)
+- 20201213 [PathExist](https://github.com/Unit7419/LeetCode/tree/master/pathExist)
+- 20201212 [Pow](https://github.com/Unit7419/LeetCode/tree/master/pow)
+- 20201210 [VerifySearchTree](https://github.com/Unit7419/LeetCode/tree/master/verifySearchTree)
+- 20201209 [NumWays](https://github.com/Unit7419/LeetCode/tree/master/numWays)
+- 20201208 [LongestContinuousCommonString](https://github.com/Unit7419/LeetCode/tree/master/LongestContinuousCommonString)
+- 20201207 [LongestCommonString](https://github.com/Unit7419/LeetCode/tree/master/LongestCommonString)
+- 20201206 [ImplementQueueByStack](https://github.com/Unit7419/LeetCode/tree/master/ImplementQueueByStack)
+- 20201205 [LongestCommonString](https://github.com/Unit7419/LeetCode/tree/master/LongestCommonString)
+- 20201204 [ReconstructionOfBinaryTree](https://github.com/Unit7419/LeetCode/tree/master/ReconstructionOfBinaryTree)
