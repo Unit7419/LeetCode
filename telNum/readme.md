@@ -1,7 +1,6 @@
 ### TelNum
 
 > Authored by [xmm] (https://github.com/Xiamengmeng)
-
 > Original source [Leet code](https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number/)
 
 
