@@ -22,6 +22,7 @@ Each other.
 - 20201219 [TelNum](https://github.com/Unit7419/LeetCode/tree/master/telNum)
 - 20201218 [MaxSum](https://github.com/Unit7419/LeetCode/tree/master/maxSum)
 - 20201217 [TransformIndent](https://github.com/Unit7419/LeetCode/tree/master/TransformIndent)
+- 20201216 [minPathSum](https://github.com/Unit7419/LeetCode/tree/master/minPathSum)
 - 20201215 [Convert](https://github.com/Unit7419/LeetCode/tree/master/Convert)
 - 20201214 [RestoreIpAddresses](https://github.com/Unit7419/LeetCode/tree/master/RestoreIpAddresses)
 - 20201213 [PathExist](https://github.com/Unit7419/LeetCode/tree/master/pathExist)
