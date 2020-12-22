@@ -1,5 +1,4 @@
 import { letterCombinationsEy } from './solution.ey';
-import { telNum as telNumJw } from './sln.jw'
 
 test('电话号码字母组合', () => {
   expect(letterCombinationsEy('23')).toStrictEqual([
