@@ -26,4 +26,4 @@ var letterCombination = function(digits) {
     return res
 };
 
-letterCombination('23')
+letterCombination('234')
