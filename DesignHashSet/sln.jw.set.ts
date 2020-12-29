@@ -4,7 +4,7 @@
 // }
 
 export class HashSet_ {
-  map = {};
+  map = Object.create(null);
   contains = k => Boolean(this.map[k]);
   remove = k => delete this.map[k];
   add = k => (this.map[k] = true);
