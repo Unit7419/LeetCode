@@ -33,7 +33,6 @@ function g(list, varsIdx, ...args) {
       ${ex(...args)}
       ${args[2] ? '$$' : ''}
     }
-  
   `;
 }
 
@@ -45,11 +44,11 @@ function forEach(input, fors = '') {
   var x = get(input);
 
   x.forEach((_, idx) => {
-    var vars = `list${idx}`;
-    var varsIdx = `l${idx}`;
+    var vars = `list${idx}`; // list0 list1...
+    var varsIdx = `l${idx}`;  // l0, l1...
 
-    varsList.push([vars, varsIdx]);
-    global[vars] = _;
+    varsList.push([vars, varsIdx]); //  [['list0', 'l0'], ['list1', 'l1']]
+    global[vars] = _; // {'list0': "a", 'list1': "b"}
     fors = g(vars, varsIdx, fors, idx === x.length - 1, idx === 0);
   });
 
