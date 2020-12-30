@@ -33,6 +33,10 @@ function g(list, varsIdx, ...args) {
       ${ex(...args)}
       ${args[2] ? '$$' : ''}
     }
+<<<<<<< HEAD
+  
+=======
+>>>>>>> 6b361cf013f698e1f825c7992e49304000918e1d
   `;
 }
 
@@ -44,11 +48,19 @@ function forEach(input, fors = '') {
   var x = get(input);
 
   x.forEach((_, idx) => {
+<<<<<<< HEAD
+    var vars = `list${idx}`;
+    var varsIdx = `l${idx}`;
+
+    varsList.push([vars, varsIdx]);
+    global[vars] = _;
+=======
     var vars = `list${idx}`; // list0 list1...
     var varsIdx = `l${idx}`;  // l0, l1...
 
     varsList.push([vars, varsIdx]); //  [['list0', 'l0'], ['list1', 'l1']]
     global[vars] = _; // {'list0': "a", 'list1': "b"}
+>>>>>>> 6b361cf013f698e1f825c7992e49304000918e1d
     fors = g(vars, varsIdx, fors, idx === x.length - 1, idx === 0);
   });
 
@@ -68,8 +80,11 @@ console.log(run('23'));
 //   'ae', 'be', 'ce',
 //   'af', 'bf', 'cf'
 // ]
+<<<<<<< HEAD
+=======
 
 
 
 
 
+>>>>>>> 6b361cf013f698e1f825c7992e49304000918e1d
