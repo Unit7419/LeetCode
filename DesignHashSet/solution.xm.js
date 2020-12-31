@@ -32,7 +32,6 @@
  */
 var MyHashSet = function() {
     this.obj = {}
-
 };
 
 /** 
