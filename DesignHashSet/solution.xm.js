@@ -31,8 +31,7 @@
  * Initialize your data structure here.
  */
 var MyHashSet = function() {
-    this.arr = []
-
+    this.obj = {}
 };
 
 /** 
