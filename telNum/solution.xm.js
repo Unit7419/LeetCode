@@ -5,7 +5,7 @@
 var letterCombination = function(digits) {
     let len=digits.length;
     if(!len) return [];
-    let dictionary = [[],[],['a','b','c'],['d','e','f'],['g','h','i'],['j','k','l'],['m','n','o'],['p','q','r','s'],['t','u','v'],['w','x','y','z']] 
+    let dictionary = [[],[],['a','b','c'],['d','e','f'],['g','h','i'],['j','k','l'],['m','n','o'],['p','q','r','s'],['t','u','v'],['w','x','y','z']]
     let res=[];
     for(let num of digits){
         let w=dictionary[num];
