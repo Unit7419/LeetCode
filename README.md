@@ -16,9 +16,14 @@
 - 发起 `Pull request` 到 `master` 分支
 
 # Review
+
 Each other.
 
 # History
+
+- 20201229 [containsDuplicate](https://github.com/Unit7419/LeetCode/tree/master/containsDuplicate)
+- 20201228 [DesignHashSet](https://github.com/Unit7419/LeetCode/tree/master/DesignHashSet)
+- 20201223 [PrintDomTreeChildren](https://github.com/Unit7419/LeetCode/tree/master/PrintDomTreeChildren)
 - 20201222 [ThreeSumClosest](https://github.com/Unit7419/LeetCode/tree/master/ThreeSumClosest)
 - 20201221 [CircusTowerLcci](https://github.com/Unit7419/LeetCode/tree/master/CircusTowerLcci)
 - 20201219 [TelNum](https://github.com/Unit7419/LeetCode/tree/master/telNum)
