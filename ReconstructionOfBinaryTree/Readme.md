@@ -34,3 +34,9 @@
 **[Answer-2](./solution.jw.ts)**
 
 **[Test cases](./test.spec.ts)**
+
+限制：
+
+```
+0 <= 节点个数 <= 5000
+```

@@ -1,19 +1,46 @@
 /**
  * Initialize your data structure here.
  */
-var MyHashSet = function() {
-    this.arr = []
+// var MyHashSet = function() {
+//     this.arr = []
 
+// };
+// MyHashSet.prototype.add = function(key) {
+// if(this.arr.indexOf(key) == -1){
+//     this.arr.push(key)
+// }
+// };
+// MyHashSet.prototype.remove = function(key) {
+//     if(this.arr.indexOf(key) !== -1){
+//         this.arr.splice(this.arr.indexOf(key),1)
+//     }
+// };
+// MyHashSet.prototype.contains = function(key) {
+//     return this.arr.indexOf(key) !==-1
+// };
+
+/**
+ * Your MyHashSet object will be instantiated and called as such:
+ * var obj = new MyHashSet()
+ * obj.add(key)
+ * obj.remove(key)
+ * var param_3 = obj.contains(key)
+ */
+
+ /**
+ * Initialize your data structure here.
+ */
+var MyHashSet = function() {
+    this.obj = {}
 };
 
 /** 
  * @param {number} key
  * @return {void}
+ * 用对象方式设计哈希集合
  */
 MyHashSet.prototype.add = function(key) {
-if(this.arr.indexOf(key) == -1){
-    this.arr.push(key)
-}
+this.obj[key] = key
 };
 
 /** 
@@ -21,9 +48,7 @@ if(this.arr.indexOf(key) == -1){
  * @return {void}
  */
 MyHashSet.prototype.remove = function(key) {
-    if(this.arr.indexOf(key) !== -1){
-        this.arr.splice(this.arr.indexOf(key),1)
-    }
+    delete this.obj[key]
 };
 
 /**
@@ -32,7 +57,7 @@ MyHashSet.prototype.remove = function(key) {
  * @return {boolean}
  */
 MyHashSet.prototype.contains = function(key) {
-    return this.arr.indexOf(key) !==-1
+    return this.obj[key] == key
 };
 
 /**
