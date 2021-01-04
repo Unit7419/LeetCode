@@ -21,7 +21,7 @@ Each other.
 
 # History
 
-- 20210103 [FirstUniqChar](https://github.com/Unit7419/LeetCode/tree/20210103/FirstUniqChar)
+- 20210103 [FirstUniqChar](https://github.com/Unit7419/LeetCode/tree/master/FirstUniqChar)
 - 20210102 [IntersectionOfTwoArrays](https://github.com/Unit7419/LeetCode/tree/master/IntersectionOfTwoArrays)
 - 20201231 [FourSum](https://github.com/Unit7419/LeetCode/tree/master/FourSum)
 - 20201230 [SingleNumber](https://github.com/Unit7419/LeetCode/tree/master/SingleNumber)
