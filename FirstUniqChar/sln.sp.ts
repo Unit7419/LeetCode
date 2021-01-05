@@ -16,3 +16,19 @@ function firstUniqChar(str) {
 		}
 	}
 }
+
+function isHappy(n) {
+	if (n === 1) return true;
+	n = n + '';
+	const list = new Set();
+	while(!list.has(n)) {
+		list.add(n);
+		let sum = 0;
+		for (let num of n) {
+			sum += num * num;
+		}
+		if (sum === 1) return true;
+		n = sum;
+	}
+	return false;
+}
