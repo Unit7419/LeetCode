@@ -3,16 +3,32 @@
 - 今日算法
 
 - 难度
+
   简单/中等/困难/地狱
 
 - 题目仓库 `[dir]` 链接
 
-# Step
+# Create daily question
 
+```bash
+# 1. git checkout master
+git checkout master
+# 2. mkdir [dir] && cd [dir]
+mkdir [dir] && cd [dir]
+# 3. 补充题目描述
+touch README.md
+# 4. git push origin HEAD:[name]
+git push origin HEAD:[name]
+# 5. 从 [name] 分支发起 pr 到 master 并 merge
+```
+
+# Commit
+
+- 本地基于 master 创建任意分支并切换到该分支
 - 在题目仓库目录创建对应的 `[dir][file]` 下完成答案
 - 在 `[dir]/test.spec.ts` 下完成测试用例编写
 - 通过 `yarn test [dir]/test.spec.ts` 单元测试（运行所有单测运行 `yarn test`）
-- 推送到任意远程分支 `git push origin HEAD:[file-your name]`
+- 推送到任意远程分支 `git push origin HEAD:[branchName]`
 - 发起 `Pull request` 到 `master` 分支
 
 # Review
