@@ -37,9 +37,9 @@ Each other.
 
 # History
 
-
-- 20210105 [MinSumOfIndex](https://github.com/Unit7419/LeetCode/tree/master/MinSumOfIndex)
-- 20210104 [isHappyNumber](https://github.com/Unit7419/LeetCode/tree/master/isHappyNumber)
+- 20210107 [ContainsNearbyDuplicate](https://github.com/Unit7419/LeetCode/tree/master/ContainsNearbyDuplicate)
+- 20210106 [MinSumOfIndex](https://github.com/Unit7419/LeetCode/tree/master/MinSumOfIndex)
+- 20210105 [isHappyNumber](https://github.com/Unit7419/LeetCode/tree/master/isHappyNumber)
 - 20210103 [FirstUniqChar](https://github.com/Unit7419/LeetCode/tree/master/FirstUniqChar)
 - 20210102 [IntersectionOfTwoArrays](https://github.com/Unit7419/LeetCode/tree/master/IntersectionOfTwoArrays)
 - 20201231 [FourSum](https://github.com/Unit7419/LeetCode/tree/master/FourSum)
