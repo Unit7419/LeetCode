@@ -36,6 +36,7 @@ git push origin HEAD:[name]
 Each other.
 
 # History
+- 20210110 [DuplicateSubTree](https://github.com/Unit7419/LeetCode/tree/master/DuplicateSubTree)
 - 20210108 [groupAnagrams](https://github.com/Unit7419/LeetCode/tree/master/groupAnagrams)
 - 20210107 [ContainsNearbyDuplicate](https://github.com/Unit7419/LeetCode/tree/master/ContainsNearbyDuplicate)
 - 20210106 [MinSumOfIndex](https://github.com/Unit7419/LeetCode/tree/master/MinSumOfIndex)
