@@ -1,20 +1,19 @@
 > Authored by [xmm] (https://github.com/Xiamengmeng)
+> Original source [LeetCode](https://leetcode-cn.com/leetbook/read/hash-table/xxnrdi/)
+字符的最长子串是 "b"，所以其长度为 1。
+示例 3:
 
-> Original source [LeetCode](https://leetcode-cn.com/leetbook/read/hash-table/xx2a0c/)
-宝石与石头
- 给定字符串J 代表石头中宝石的类型，和字符串 S代表你拥有的石头。 S 中每个字符代表了一种你拥有的石头的类型，你想知道你拥有的石头中有多少是宝石。
-
-J 中的字母不重复，J 和 S中的所有字符都是字母。字母区分大小写，因此"a"和"A"是不同类型的石头。
-
-示例 1:
-
-输入: J = "aA", S = "aAAbbbb"
+输入: s = "pwwkew"
 输出: 3
-示例 2:
+解释: 因为无重复字符的最长子串是 "wke"，所以其长度为 3。
+     请注意，你的答案必须是 子串 的长度，"pwke" 是一个子序列，不是子串。
+示例 4:
 
-输入: J = "z", S = "ZZ"
+输入: s = ""
 输出: 0
-注意:
+ 
 
-S 和 J 最多含有50个字母。
- J 中的字符不重复。
+提示：
+
+0 <= s.length <= 5 * 104
+s 由英文字母、数字、符号和空格组成
