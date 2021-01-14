@@ -1,0 +1,108 @@
+server:
+  port: 9019
+
+guns:
+  swagger-open: true                #是否开启swagger (true/false)
+  kaptcha-open: false               #是否开启登录时验证码 (true/false)
+  file-upload-path: /data1/application/static/           #文件上传目录(不配置的话为java.io.tmpdir目录)
+  spring-session-open: false        #是否开启spring session,如果是多机环境需要开启(true/false)
+  session-invalidate-time: 1800     #session失效时间(只在单机环境下生效，多机环境在SpringSessionConfig类中配置) 单位：秒
+  session-validation-interval: 900  #多久检测一次失效的session(只在单机环境下生效) 单位：秒
+  #  template-file-path: /data1/application/static/    #模板文件存放路径
+  #  template-temp-path: /data1/application/static/temp/ #生成的临时模板文件存放路径
+  template-file-path: /Users/limeng/Desktop/xixi-data/static/    #模板文件存放路径
+  template-temp-path: /Users/limeng/Desktop/xixi-data/static/temp/ #生成的临时模板文件存放路径
+
+spring:
+  profiles:
+    active: @spring.active@
+  mvc:
+    static-path-pattern: /static/**
+    view:
+      prefix: /WEB-INF/view
+  devtools:
+    restart:
+      enabled: false
+      additional-paths: src/main/java
+      exclude: static/**,WEB-INF/view/**
+  servlet:
+    multipart:
+      max-request-size: 100MB
+      max-file-size: 100MB
+  jackson:
+    time-zone: GMT+8
+mybatis-plus:
+  typeAliasesPackage: com.stylefeng.guns.modular.system.model
+  local-cache-scope: statement
+  configuration:
+    map-underscore-to-camel-case: false
+    cache-enabled: true #配置的缓存的全局开关
+    lazyLoadingEnabled: true #延时加载的开关
+    multipleResultSetsEnabled: true #开启的话，延时加载一个属性时会加载该对象全部属性，否则按需加载属性
+    log-impl: org.apache.ibatis.logging.nologging.NoLoggingImpl #关闭数据库操作日志  add by longyuan
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #打印sql语句,调试用
+
+log:
+  path: guns-logs
+
+---
+# 打包要修改数据库路径
+spring:
+  profiles: local
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 500MB
+  datasource:
+    #    url: jdbc:mysql://49.235.85.31:3306/xixi?characterEncoding=utf-8&autoReconnect=true&useUnicode=true&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=GMT%2B8
+    #    username: root
+    #    password: duoge123!!!
+    url: jdbc:mysql://rm-uf6z07ntk2ytfv786mo.mysql.rds.aliyuncs.com:3306/xixi?characterEncoding=utf-8&autoReconnect=true&useUnicode=true&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=GMT%2B8
+    username: xixi
+    password: xixi123!@#
+    db-name: xixi #用来搜集数据库的所有表
+    filters: wall,mergeStat
+
+#多数据源情况的配置
+guns:
+  #  file-upload-path: /Users/limeng/Desktop/xixi-data         #文件上传目录(不配置的话为java.io.tmpdir目录)
+  muti-datasource:
+    open: false
+    url: jdbc:mysql://127.0.0.1:3306/guns_test?autoReconnect=true&useUnicode=true&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=UTC
+    username: root
+    password: root
+    dataSourceNames:
+      - dataSourceGuns
+      - dataSourceBiz
+
+---
+
+spring:
+  profiles: dev
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/guns?autoReconnect=true&useUnicode=true&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=UTC
+    username: root
+    password: root
+    db-name: guns #用来搜集数据库的所有表
+    filters: wall,mergeStat
+
+---
+
+spring:
+  profiles: test
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/guns?autoReconnect=true&useUnicode=true&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=UTC
+    username: root
+    password: root
+    filters: wall,mergeStat
+
+---
+
+spring:
+  profiles: produce
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/guns?characterEncoding=utf-8&autoReconnect=true&useUnicode=true&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=UTC
+    username: root
+    password: root
+    filters: wall,mergeStat
+
