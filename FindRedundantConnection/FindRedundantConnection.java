@@ -12,8 +12,10 @@ public class FindRedundantConnection {
     public void test(){
 //        int[][] edges = {{1,2}, {2,3}, {3,4}, {1,4}, {1,5}};
 //        int[][] edges = {{1,2}, {2,3}, {3,4}, {1,4}, {1,5},{5,6}};
-        int[][] edges = {{1,3},{3,4},{1,5},{3,5},{2,3}};
+//        int[][] edges = {{1,3},{3,4},{1,5},{3,5},{2,3}};
+        int[][] edges = {{1,4},{3,4},{1,3},{1,2},{4,5}};
 //        int[][] edges = {{1,2} , {1,3} , {2,3}};
+
 
         System.out.println(findRedundantConnection(edges));
     }
@@ -110,6 +112,8 @@ public class FindRedundantConnection {
             return result;
         }
 
+
+
         int biggest = findBiggestValue(edges);
         int [][] matrx = new int[biggest + 1][biggest + 1];
         for(int i = 0 ; i < edges.length ; i++){
@@ -120,16 +124,21 @@ public class FindRedundantConnection {
 
         int showTimes = 0;
         int line = 0;
+        boolean breakFlag = false;
         for(int j = matrx[0].length - 1 ; j > -1 ; j--){
             for(int i = matrx.length - 1 ; i > -1 ; i--){
                 if(matrx[i][j] == 1){
                     if(showTimes != 0){
                         line = j;
+                        breakFlag = true;
                         break;
                     }else{
                         showTimes++;
                     }
                 }
+            }
+            if(breakFlag){
+                break;
             }
             showTimes = 0;
         }
